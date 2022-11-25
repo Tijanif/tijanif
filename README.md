@@ -1,8 +1,5 @@
 
-# The source code for my website, 
-
-
-The source code for my website.
+# The source code for my website
 
 It is based on the devfolio template by Ryan Fitzgerald, and built with Next.js and Tailwind CSS. I currently host it on Vercel.
 
