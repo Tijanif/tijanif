@@ -54,7 +54,7 @@ export const about = {
             name: 'This website!',
             description:
                 'Built with Next js and Tailwind CSS, based on the devfolio template by Ryan Fitzgerald',
-            link: 'https://github.com/nawhi/nickwhite.cc'
+            link: 'https://tijanif.vercel.app/'
         },
         {
             name: 'Fronted Mentor',
