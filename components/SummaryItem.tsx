@@ -25,6 +25,7 @@ const SummaryItem = ({name, shortDesc,link,longDesc,tags}:SectionItem) => {
                            </div>
 
                 {
+                    // eslint-disable-next-line react/jsx-key
                     longDesc && tags ?  <ul className="text-xs flex flex-wrap gap-2 pt-2 pb-1"> {tags.map(line => <li className="px-2 dark:bg-th-subtle rounded-full border border-th-subtle dark:text-th-primary"> {line}</li> )} </ul> : null
                 }
                          <div className="text-base text-th-tertiary pt-1">
