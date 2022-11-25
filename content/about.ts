@@ -88,12 +88,13 @@ export const about = {
         {
             name: 'University of Kent - Brussels',
             description: 'International Political Economy, 2011-2012',
+            bio:[],
 
         },
         {
             name: 'London Metropolitan University',
             description: 'International Relations and Politics , 2008 - 2011',
-
+            bio:[],
         }
     ]
 };
