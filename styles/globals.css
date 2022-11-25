@@ -1,0 +1,176 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+code[class*='language-'],
+pre[class*='language-'] {
+    /* Overrides default set in imported PrismJS theme */
+    font-size: 0.9rem !important;
+}
+
+:root {
+    /* Taken from Tailwind colour palette */
+    --zinc-50: #fafafa;
+    --zinc-800: #27272a;
+    --zinc-600: #52525b;
+    --zinc-500: #71717a;
+    --zinc-200: #e4e4e7;
+    --emerald-500: #10b981;
+    --emerald-700: #047857;
+    --red-400: #f87171;
+    --slate-900: #111827;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #6b7280;
+    --slate-600: #475569;
+    --cyan-700: #0e7490;
+    --cyan-500: #06b6d4;
+    --orange-600: #ea580c;
+    --alice-blue:#f0f8ff;
+
+    --th-background: var(--alice-blue);
+    --th-primary: var(--zinc-800);
+    --th-secondary: var(--zinc-600);
+    --th-tertiary: var(--zinc-500);
+    --th-subtle: var(--zinc-200);
+    --th-action: var(--emerald-500);
+    --th-action-focus: var(--emerald-700);
+    --th-error: var(--red-400);
+
+    /* used in dark theme article */
+    --th-wrong-media: var(--slate-300); /* slate-400 */
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --th-background: var(--slate-900);
+        --th-primary: var(--slate-300);
+        --th-secondary: var(--slate-400);
+        --th-tertiary: var(--slate-500);
+        --th-subtle: var(--slate-600);
+        --th-action: var(--cyan-700);
+        --th-action-focus: var(--cyan-500);
+        --th-error: var(--orange-600);
+
+        /* used in dark theme article */
+        --th-wrong-media: var(--zinc-800);
+    }
+}
+
+@layer base {
+    body {
+        @apply bg-th-background;
+    }
+
+    p,
+    ul,
+    ol {
+        @apply text-th-secondary;
+    }
+
+    a {
+        @apply text-th-primary decoration-1;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @apply text-th-primary;
+    }
+
+    h6 {
+        @apply text-th-secondary;
+    }
+
+    .blog-content {
+        @apply max-w-prose;
+        text-rendering: optimizeLegibility;
+        @apply text-lg;
+    }
+
+    .blog-content strong {
+        @apply text-th-primary;
+    }
+
+    .blog-content p,
+    .blog-content .blog-widget,
+    .gatsby-highlight {
+        @apply mb-6;
+        @apply font-sans;
+        @apply text-lg;
+    }
+
+    .blog-content pre {
+        @apply mb-6;
+    }
+
+    .blog-content a {
+        @apply underline underline-offset-2 hover:no-underline;
+    }
+
+    .blog-content ul,
+    .blog-content ol {
+        @apply mb-6 ml-10;
+    }
+
+    .blog-content ul li {
+        @apply list-disc mb-1.5;
+    }
+
+    .blog-content ol li {
+        @apply list-decimal mb-1.5;
+    }
+
+    /* mdsvex generates a <p> element inside unordered lists */
+    .blog-content ol li > p {
+        @apply mb-1.5;
+    }
+
+    .blog-content h1,
+    .blog-content h2,
+    .blog-content h3,
+    .blog-content h4,
+    .blog-content h5,
+    .blog-content h6 {
+        @apply font-bold;
+        @apply mt-3 mb-1.5;
+    }
+
+    .blog-content h1 {
+        @apply text-2xl xs:text-3xl;
+    }
+
+    .blog-content h2 {
+        @apply text-xl xs:text-2xl;
+    }
+
+    .blog-content h3 {
+        @apply text-lg xs:text-xl;
+    }
+
+    .blog-content h4 {
+        @apply text-base xs:text-lg;
+    }
+
+    .blog-content blockquote {
+        @apply pl-5;
+        @apply border-l-4;
+    }
+
+    .blog-content hr {
+        @apply my-6;
+    }
+}
+
+@layer utilities {
+    .max-w-150 {
+        max-width: 150px;
+    }
+
+    .top-5 {
+        top: 5%;
+    }
+}
