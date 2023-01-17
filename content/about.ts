@@ -13,7 +13,7 @@ export const about = {
   experience: [
     {
       name: "Triptease",
-      description: ["Associate Software Engineer, 2021 - 2002"],
+      description: ["Associate Software Engineer, 2021 - 2022"],
       link: "https://triptease.com",
       technologies: ["Node.js", "React.js", "TypeScript", "MongoDB"],
       bio: [
