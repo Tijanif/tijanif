@@ -25,10 +25,12 @@ const Home: NextPage = () => {
           </p>
         </div>
       </Section>
-      {/*<Section title="Latest Posts">*/}
-      {/*    /!*<PostList posts={data.posts} limit={5} />*!/*/}
-      {/*    <p>Blog Posts coming soon</p>*/}
-      {/*</Section>*/}
+      <Section title='Latest Posts'>
+        /!*
+        {/* <PostList posts={data.posts} limit={5} /> */}
+        *!/
+        <p>Blog Posts coming soon</p>
+      </Section>
     </div>
   );
 };
