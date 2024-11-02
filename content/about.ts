@@ -12,6 +12,17 @@ export const about = {
   ],
   experience: [
     {
+      name: "Daaci",
+      description: ["Frontend Developer, 2023 - 2024"],
+      link: "https://daaci.com",
+      technologies: ["Node.js", "React.js", "TypeScript", "C++"],
+      bio: [
+        "DAACI is building a composer-focused generative music composition system using machine learning techniques informed by musicology.",
+        "Its Meta-Composition Interface (MCI) will have applications in real time gaming soundtracks, fan engagement, and film & TV music composition.",
+        "I have been focusing on building out prototypes allowing meta-composition in the browser - in TypeScript / React, using the Web Audio and Web MIDI API."
+      ],
+    },
+    {
       name: "Triptease",
       description: ["Associate Software Engineer, 2021 - 2022"],
       link: "https://triptease.com",
